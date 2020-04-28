@@ -32,6 +32,8 @@ Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 " consider https://github.com/junegunn/fzf
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'iberianpig/tig-explorer.vim'
+Plug 'rhysd/git-messenger.vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -60,6 +62,28 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " leaderF
 let g:Lf_WindowPosition = 'popup'
+
+" tig
+" open tig with current file
+nnoremap <Leader>T :TigOpenCurrentFile<CR>
+
+" open tig with Project root path
+nnoremap <Leader>t :TigOpenProjectRootDir<CR>
+
+" open tig grep
+nnoremap <Leader>g :TigGrep<CR>
+
+" resume from last grep
+nnoremap <Leader>r :TigGrepResume<CR>
+
+" open tig grep with the selected word
+vnoremap <Leader>g y:TigGrep<Space><C-R>"<CR>
+
+" open tig grep with the word under the cursor
+nnoremap <Leader>cg :<C-u>:TigGrep<Space><C-R><C-W><CR>
+
+" open tig blame with current file
+nnoremap <Leader>b :TigBlame<CR>
 
 " Airline
 let g:airline_theme = 'deus'
