@@ -53,6 +53,12 @@ let g:Lf_WindowPosition = 'popup'
 " Airline
 let g:airline_theme = 'deus'
 
+" coc
+" set path to nvr'd node
+if has('macunix')
+	let g:coc_node_path = $HOME . '/.nvm/versions/node/v14.0.0/bin/node'
+endif
+
 " debug https://www.reddit.com/r/rust/comments/f1ucwh/hey_rustaceans_got_an_easy_question_ask_here_72020/fh910ah/
 " copy-paste https://unix.stackexchange.com/questions/139578/copy-paste-for-vim-is-not-working-when-mouse-set-mouse-a-is-on
 
