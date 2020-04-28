@@ -1,3 +1,6 @@
+" brew tap caskroom/fonts
+" brew cask install font-firacode-nerd-font 
+
 if exists('g:vscode')
 	" VSCode extension
 	xmap gc  <Plug>VSCodeCommentary
@@ -34,6 +37,8 @@ call plug#end()
 
 let mapleader = ","
 colo seoul256
+
+set encoding=UTF-8
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
