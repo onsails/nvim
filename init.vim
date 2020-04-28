@@ -41,9 +41,9 @@ colo seoul256
 set encoding=UTF-8
 
 " NERDTree
-map <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle %<CR>
 " on vim open focus on open file buffer if any
-autocmd vimenter * NERDTree | wincmd w
+autocmd vimenter * NERDTree % | wincmd w
 " close nvim if only buffer left is nerdtree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -57,6 +57,8 @@ let g:airline_theme = 'deus'
 " set path to nvr'd node
 if has('macunix')
 	let g:coc_node_path = $HOME . '/.nvm/versions/node/v14.0.0/bin/node'
+	set guifont=FiraCode\ Nerd\ Font:h11
+	let g:neovide_fullscreen=v:true
 endif
 
 " debug https://www.reddit.com/r/rust/comments/f1ucwh/hey_rustaceans_got_an_easy_question_ask_here_72020/fh910ah/
