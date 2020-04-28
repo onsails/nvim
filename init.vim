@@ -29,6 +29,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight', { 'on': 'NERDTreeToggle' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
+" consider https://github.com/junegunn/fzf
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
