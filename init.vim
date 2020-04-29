@@ -22,7 +22,8 @@ inoremap <C-d> <Esc>lxi
 call plug#begin('~/.config/nvim/plugged')
 
 " Declare the list of plugins.
-Plug 'junegunn/seoul256.vim'
+Plug 'git@gitlab.com:yorickpeterse/happy_hacking.vim.git'
+Plug 'https://github.com/joshdick/onedark.vim.git'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight', { 'on': 'NERDTreeToggle' }
@@ -35,12 +36,17 @@ Plug 'iberianpig/tig-explorer.vim'
 Plug 'rhysd/git-messenger.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'rust-lang/rust.vim'
+Plug 'majutsushi/tagbar'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
 let mapleader = ","
-colo seoul256
+
+" color scheme
+syntax on
+colorscheme onedark
 
 set encoding=UTF-8
 
@@ -64,7 +70,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " FZF
 
 " find file
-nnoremap <C-T> :Files<Cr>
+nnoremap <C-P> :Files<Cr>
 
 " Mapping selecting mappings
 nmap <leader><tab> <plug>(fzf-maps-n)
@@ -93,6 +99,10 @@ inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
 " --color: Search color options
 command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
 nnoremap <C-F> :Find 
+
+" Tagbar
+
+nnoremap <C-T> :TagbarOpen fcj<CR>
 
 " tig
 " open tig with current file
@@ -129,5 +139,4 @@ endif
 
 " debug https://www.reddit.com/r/rust/comments/f1ucwh/hey_rustaceans_got_an_easy_question_ask_here_72020/fh910ah/
 " copy-paste https://unix.stackexchange.com/questions/139578/copy-paste-for-vim-is-not-working-when-mouse-set-mouse-a-is-on
-
 
