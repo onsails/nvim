@@ -54,6 +54,14 @@ let g:airline = { 'colorscheme': 'plastic' }
 
 set number
 
+" https://vi.stackexchange.com/questions/4141/how-to-indent-as-spaces-instead-of-tab
+" https://stackoverflow.com/questions/17916154/vim-tab-spacing-after-enter-new-line
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+
 source ~/.config/nvim/terminal.vim
 
 source ~/.config/nvim/nerdtree.vim
