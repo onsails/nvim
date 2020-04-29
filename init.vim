@@ -51,15 +51,15 @@ syntax on
 colorscheme plastic
 let g:airline = { 'colorscheme': 'plastic' }
 
-source nerdtree.vim
+source ~/.config/nvim/nerdtree.vim
 
-source coc.vim
+source ~/.config/nvim/coc.vim
 
-source tagbar.vim
+source ~/.config/nvim/tagbar.vim
 
-source airline.vim
+source ~/.config/nvim/airline.vim
 
-source coc.vim
+source ~/.config/nvim/coc.vim
 
 " debug https://www.reddit.com/r/rust/comments/f1ucwh/hey_rustaceans_got_an_easy_question_ask_here_72020/fh910ah/
 " copy-paste https://unix.stackexchange.com/questions/139578/copy-paste-for-vim-is-not-working-when-mouse-set-mouse-a-is-on
