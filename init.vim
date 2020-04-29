@@ -37,6 +37,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'majutsushi/tagbar'
+Plug 'kassio/neoterm'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
