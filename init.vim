@@ -22,8 +22,7 @@ inoremap <C-d> <Esc>lxi
 call plug#begin('~/.config/nvim/plugged')
 
 " Declare the list of plugins.
-Plug 'git@gitlab.com:yorickpeterse/happy_hacking.vim.git'
-Plug 'https://github.com/joshdick/onedark.vim.git'
+Plug 'flrnprz/plastic.vim'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight', { 'on': 'NERDTreeToggle' }
@@ -46,7 +45,11 @@ let mapleader = ","
 
 " color scheme
 syntax on
-colorscheme onedark
+set termguicolors
+set background=dark
+syntax on
+colorscheme plastic
+let g:airline = { 'colorscheme': 'plastic' }
 
 source nerdtree.vim
 
