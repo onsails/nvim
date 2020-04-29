@@ -53,6 +53,8 @@ let g:airline = { 'colorscheme': 'plastic' }
 
 set number
 
+source ~/.config/nvim/terminal.vim
+
 source ~/.config/nvim/nerdtree.vim
 
 source ~/.config/nvim/coc.vim
