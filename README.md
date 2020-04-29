@@ -1,3 +1,3 @@
 ```
-cargo install ctags fzf ripgrep
+brew install ctags fzf ripgrep
 ```
