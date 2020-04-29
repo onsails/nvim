@@ -1,0 +1,11 @@
+{
+  "languageserver": {
+    "terraform": {
+      "command": "terraform-lsp",
+      "filetypes": ["terraform"],
+      "initializationOptions": {}
+    }
+  },
+
+  "coc.preferences.formatOnSaveFiletypes": ["vim", "rs", "json"]
+}
