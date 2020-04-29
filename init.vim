@@ -51,6 +51,8 @@ syntax on
 colorscheme plastic
 let g:airline = { 'colorscheme': 'plastic' }
 
+set number
+
 source ~/.config/nvim/nerdtree.vim
 
 source ~/.config/nvim/coc.vim
