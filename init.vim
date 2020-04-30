@@ -68,6 +68,8 @@ set smartindent
 
 filetype plugin on
 
+:noremap <leader>gf :e <cfile><cr>
+
 source ~/.config/nvim/terminal.vim
 
 source ~/.config/nvim/nerdtree.vim
@@ -85,7 +87,6 @@ source ~/.config/nvim/json.vim
 source ~/.config/nvim/terraform.vim
 
 source ~/.config/nvim/nerdcommenter.vim
-
 
 " debug https://www.reddit.com/r/rust/comments/f1ucwh/hey_rustaceans_got_an_easy_question_ask_here_72020/fh910ah/
 " copy-paste https://unix.stackexchange.com/questions/139578/copy-paste-for-vim-is-not-working-when-mouse-set-mouse-a-is-on
