@@ -1,5 +1,5 @@
 " NERDTree
-map <C-n> :NERDTreeToggle %<CR>
+map <leader>-n: :NERDTreeToggle %<CR>
 " on vim open focus on open file buffer if any
 autocmd vimenter * call VimEnter()
 function VimEnter()

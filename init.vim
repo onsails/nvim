@@ -42,6 +42,7 @@ Plug 'hashivim/vim-terraform'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-fugitive'
+Plug 'mhinz/vim-crates'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -90,6 +91,9 @@ source ~/.config/nvim/json.vim
 source ~/.config/nvim/terraform.vim
 
 source ~/.config/nvim/nerdcommenter.vim
+
+source ~/.config/nvim/rust.vim
+
 
 " debug https://www.reddit.com/r/rust/comments/f1ucwh/hey_rustaceans_got_an_easy_question_ask_here_72020/fh910ah/
 " copy-paste https://unix.stackexchange.com/questions/139578/copy-paste-for-vim-is-not-working-when-mouse-set-mouse-a-is-on
