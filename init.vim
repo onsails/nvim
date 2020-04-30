@@ -68,6 +68,8 @@ set smartindent
 
 filetype plugin on
 
+source ~/.config/nvim/gui.vim
+
 source ~/.config/nvim/terminal.vim
 
 source ~/.config/nvim/nerdtree.vim
