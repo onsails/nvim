@@ -31,7 +31,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " consider https://github.com/junegunn/fzf
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'iberianpig/tig-explorer.vim'
 Plug 'rhysd/git-messenger.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -93,7 +92,6 @@ source ~/.config/nvim/terraform.vim
 source ~/.config/nvim/nerdcommenter.vim
 
 source ~/.config/nvim/rust.vim
-
 
 " debug https://www.reddit.com/r/rust/comments/f1ucwh/hey_rustaceans_got_an_easy_question_ask_here_72020/fh910ah/
 " copy-paste https://unix.stackexchange.com/questions/139578/copy-paste-for-vim-is-not-working-when-mouse-set-mouse-a-is-on
