@@ -41,6 +41,7 @@ Plug 'kassio/neoterm'
 Plug 'hashivim/vim-terraform'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'preservim/nerdcommenter'
+Plug 'tpope/vim-fugitive'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
