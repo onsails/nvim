@@ -16,6 +16,7 @@ endif
 
 nnoremap <esc> :noh<return><esc>
 inoremap <F2> <ESC>
+" delete character
 inoremap <C-d> <Esc>lxi
 
 " Plugins will be downloaded under the specified directory.
