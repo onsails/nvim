@@ -44,6 +44,7 @@ Plug 'mhinz/vim-crates'
 Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/fern-renderer-devicons.vim'
 Plug 'lambdalisue/fern-mapping-project-top.vim'
+Plug 'yuttie/comfortable-motion.vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()

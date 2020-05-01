@@ -1,4 +1,4 @@
 " Tagbar
 
-nnoremap <C-T> :TagbarOpen fcj<CR>
+nnoremap <leader>s :TagbarOpen fcj<CR>
 

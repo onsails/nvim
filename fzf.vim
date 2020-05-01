@@ -30,3 +30,6 @@ inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
 " --color: Search color options
 command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
 nnoremap <C-x><C-F> :Find 
+
+" popup
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }

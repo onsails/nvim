@@ -7,5 +7,5 @@
     }
   },
 
-  "coc.preferences.formatOnSaveFiletypes": ["vim", "rs", "json"]
+  "coc.preferences.formatOnSaveFiletypes": ["vim", "rust", "json"]
 }
