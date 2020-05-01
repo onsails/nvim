@@ -24,8 +24,6 @@ call plug#begin('~/.config/nvim/plugged')
 " Declare the list of plugins.
 Plug 'flrnprz/plastic.vim'
 Plug 'tpope/vim-surround'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight', { 'on': 'NERDTreeToggle' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " consider https://github.com/junegunn/fzf
@@ -42,6 +40,9 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-crates'
+Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/fern-renderer-devicons.vim'
+Plug 'lambdalisue/fern-mapping-project-top.vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -75,8 +76,6 @@ source ~/.config/nvim/gui.vim
 
 source ~/.config/nvim/terminal.vim
 
-source ~/.config/nvim/nerdtree.vim
-
 source ~/.config/nvim/coc.vim
 
 source ~/.config/nvim/tagbar.vim
@@ -92,6 +91,8 @@ source ~/.config/nvim/terraform.vim
 source ~/.config/nvim/nerdcommenter.vim
 
 source ~/.config/nvim/rust.vim
+
+source ~/.config/nvim/fern.vim
 
 " debug https://www.reddit.com/r/rust/comments/f1ucwh/hey_rustaceans_got_an_easy_question_ask_here_72020/fh910ah/
 " copy-paste https://unix.stackexchange.com/questions/139578/copy-paste-for-vim-is-not-working-when-mouse-set-mouse-a-is-on
