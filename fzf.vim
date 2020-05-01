@@ -43,3 +43,7 @@ function! RipgrepFzf(query, fullscreen)
 endfunction
 
 command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
+
+" [Buffers] Jump to the existing window if possible
+let g:fzf_buffers_jump = 1
+

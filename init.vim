@@ -33,8 +33,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'rhysd/git-messenger.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'antoinemadec/coc-fzf'
 Plug 'rust-lang/rust.vim'
-Plug 'majutsushi/tagbar'
 Plug 'kassio/neoterm'
 Plug 'hashivim/vim-terraform'
 Plug 'christoomey/vim-tmux-navigator'
@@ -45,6 +45,7 @@ Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/fern-renderer-devicons.vim'
 Plug 'lambdalisue/fern-mapping-project-top.vim'
 Plug 'yuttie/comfortable-motion.vim'
+Plug 'liuchengxu/vista.vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -80,7 +81,6 @@ filetype plugin on
 source ~/.config/nvim/gui.vim
 source ~/.config/nvim/terminal.vim
 source ~/.config/nvim/coc.vim
-source ~/.config/nvim/tagbar.vim
 source ~/.config/nvim/airline.vim
 source ~/.config/nvim/fzf.vim
 source ~/.config/nvim/json.vim
@@ -88,6 +88,7 @@ source ~/.config/nvim/terraform.vim
 source ~/.config/nvim/nerdcommenter.vim
 source ~/.config/nvim/rust.vim
 source ~/.config/nvim/fern.vim
+source ~/.config/nvim/vista.vim
 
 " debug https://www.reddit.com/r/rust/comments/f1ucwh/hey_rustaceans_got_an_easy_question_ask_here_72020/fh910ah/
 " copy-paste https://unix.stackexchange.com/questions/139578/copy-paste-for-vim-is-not-working-when-mouse-set-mouse-a-is-on
