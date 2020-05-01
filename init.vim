@@ -58,6 +58,9 @@ syntax on
 colorscheme plastic
 let g:airline = { 'colorscheme': 'plastic' }
 
+" reduce default delay of hover highlight
+set updatetime=50
+
 set number
 
 " https://vi.stackexchange.com/questions/4141/how-to-indent-as-spaces-instead-of-tab
