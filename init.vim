@@ -74,25 +74,15 @@ filetype plugin on
 :noremap <leader>gf :e <cfile><cr>
 
 source ~/.config/nvim/gui.vim
-
 source ~/.config/nvim/terminal.vim
-
 source ~/.config/nvim/coc.vim
-
 source ~/.config/nvim/tagbar.vim
-
 source ~/.config/nvim/airline.vim
-
 source ~/.config/nvim/fzf.vim
-
 source ~/.config/nvim/json.vim
-
 source ~/.config/nvim/terraform.vim
-
 source ~/.config/nvim/nerdcommenter.vim
-
 source ~/.config/nvim/rust.vim
-
 source ~/.config/nvim/fern.vim
 
 " debug https://www.reddit.com/r/rust/comments/f1ucwh/hey_rustaceans_got_an_easy_question_ask_here_72020/fh910ah/
