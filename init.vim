@@ -23,7 +23,6 @@ inoremap <C-d> <Esc>lxi
 call plug#begin('~/.config/nvim/plugged')
 
 " Declare the list of plugins.
-Plug 'flrnprz/plastic.vim'
 Plug 'tpope/vim-surround'
 Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -47,6 +46,10 @@ Plug 'lambdalisue/fern-mapping-project-top.vim'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'liuchengxu/vista.vim'
 
+" colorschemes
+Plug 'morhetz/gruvbox'
+Plug 'chriskempson/base16-vim'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -57,8 +60,8 @@ syntax on
 set termguicolors
 set background=dark
 syntax on
-colorscheme plastic
-let g:airline = { 'colorscheme': 'plastic' }
+colorscheme base16-oceanicnext
+let g:airline = { 'colorscheme': 'base16-oceanicnext' }
 
 " reduce default delay of hover highlight
 set updatetime=50
