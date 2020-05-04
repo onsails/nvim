@@ -1,3 +1,12 @@
+let g:coc_global_extensions = [
+            \ "coc-rust-analyzer",
+            \ "coc-json",
+            \ "coc-prettier",
+            \ "coc-tsserver",
+            \ "coc-pairs"
+            \ ]
+
+call coc#add_extension('coc-json', 'coc-tsserver', 'coc-rust-analyzer')
 " coc
 
 " completion navigation
@@ -135,6 +144,7 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " Add (Neo)Vim's native statusline support.
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
 " provide custom statusline: lightline.vim, vim-airline.
+" commented-out because it's done by vista
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " coc-fzf bindings
@@ -163,3 +173,7 @@ nnoremap <silent> <space>p  :<C-u>CocFzfListResume<CR>
 " nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " " Resume latest coc list.
 " nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+" highlight code in markdown
+let g:markdown_fenced_languages = ['css', 'js=javascript', 'rust']
+

@@ -1,6 +1,7 @@
 " FZF 
 " find file
 nnoremap <C-P> :Files<Cr>
+nnoremap <leader>b :Buffers<cr>
 
 " Mapping selecting mappings
 nmap <leader><tab> <plug>(fzf-maps-n)

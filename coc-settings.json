@@ -6,6 +6,8 @@
       "initializationOptions": {}
     }
   },
-
-  "coc.preferences.formatOnSaveFiletypes": ["vim", "rust", "json"]
+  "coc.preferences.formatOnSaveFiletypes": ["vim", "rust", "json"],
+  "coc.preferences.codeLens.enable": true,
+  "coc.preferences.diagnostic.virtualText": true,
+  "coc.preferences.suggest.enablePreview": true
 }
