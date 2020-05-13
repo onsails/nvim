@@ -69,9 +69,9 @@ set number
 
 " https://vi.stackexchange.com/questions/4141/how-to-indent-as-spaces-instead-of-tab
 " https://stackoverflow.com/questions/17916154/vim-tab-spacing-after-enter-new-line
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+" set tabstop=4
+" set softtabstop=4
+" set shiftwidth=4
 set expandtab
 set autoindent
 set smartindent
@@ -86,6 +86,7 @@ source ~/.config/nvim/coc.vim
 source ~/.config/nvim/airline.vim
 source ~/.config/nvim/fzf.vim
 source ~/.config/nvim/json.vim
+source ~/.config/nvim/yaml.vim
 source ~/.config/nvim/terraform.vim
 source ~/.config/nvim/nerdcommenter.vim
 source ~/.config/nvim/rust.vim

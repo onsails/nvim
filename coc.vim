@@ -6,7 +6,7 @@ let g:coc_global_extensions = [
             \ "coc-pairs"
             \ ]
 
-call coc#add_extension('coc-json', 'coc-tsserver', 'coc-rust-analyzer')
+call coc#add_extension('coc-json', 'coc-tsserver', 'coc-rust-analyzer', 'coc-yaml')
 " coc
 
 " completion navigation

@@ -10,5 +10,6 @@
   "coc.preferences.codeLens.enable": true,
   "coc.preferences.diagnostic.virtualText": true,
   "coc.preferences.suggest.enablePreview": true,
-  "rust-analyzer.updates.channel": "nightly"
+  "rust-analyzer.updates.channel": "nightly",
+  "yaml.editor.tabSize": 2
 }
