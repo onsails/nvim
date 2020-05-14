@@ -6,7 +6,7 @@ let g:coc_global_extensions = [
             \ "coc-pairs"
             \ ]
 
-call coc#add_extension('coc-json', 'coc-tsserver', 'coc-rust-analyzer', 'coc-yaml')
+call coc#add_extension('coc-json', 'coc-tsserver', 'coc-rust-analyzer', 'coc-yaml', 'coc-prettier')
 " coc
 
 " completion navigation
@@ -100,14 +100,6 @@ nmap <leader>rn <Plug>(coc-rename)
 " Formatting selected code.
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
-
-augroup mygroup
-  autocmd!
-  " Setup formatexpr specified filetype(s).
-  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
-  " Update signature help on jump placeholder.
-  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
-augroup end
 
 " Applying codeAction to the selected region.
 " Example: `<leader>aap` for current paragraph

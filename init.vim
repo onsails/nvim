@@ -26,7 +26,6 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" consider https://github.com/junegunn/fzf
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'rhysd/git-messenger.vim'
@@ -44,6 +43,7 @@ Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/fern-renderer-devicons.vim'
 Plug 'lambdalisue/fern-mapping-project-top.vim'
 Plug 'liuchengxu/vista.vim'
+Plug 'neovim/nvim-lsp'
 
 " colorschemes
 Plug 'morhetz/gruvbox'
@@ -83,6 +83,7 @@ filetype plugin on
 source ~/.config/nvim/gui.vim
 source ~/.config/nvim/terminal.vim
 source ~/.config/nvim/coc.vim
+source ~/.config/nvim/prettier.vim
 source ~/.config/nvim/airline.vim
 source ~/.config/nvim/fzf.vim
 source ~/.config/nvim/json.vim
@@ -90,6 +91,7 @@ source ~/.config/nvim/yaml.vim
 source ~/.config/nvim/terraform.vim
 source ~/.config/nvim/nerdcommenter.vim
 source ~/.config/nvim/rust.vim
+source ~/.config/nvim/mq5.vim
 source ~/.config/nvim/fern.vim
 source ~/.config/nvim/vista.vim
 
