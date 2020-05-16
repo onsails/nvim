@@ -3,7 +3,8 @@ let g:coc_global_extensions = [
             \ "coc-json",
             \ "coc-prettier",
             \ "coc-tsserver",
-            \ "coc-pairs"
+            \ "coc-pairs",
+            \ "coc-explorer"
             \ ]
 
 call coc#add_extension('coc-json', 'coc-tsserver', 'coc-rust-analyzer', 'coc-yaml', 'coc-prettier')
@@ -143,12 +144,13 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 nnoremap <silent> <space>a  :<C-u>CocFzfList diagnostics<CR>
 nnoremap <silent> <space>b  :<C-u>CocFzfList diagnostics --current-buf<CR>
 nnoremap <silent> <space>c  :<C-u>CocFzfList commands<CR>
-nnoremap <silent> <space>e  :<C-u>CocFzfList extensions<CR>
+" nnoremap <silent> <space>e  :<C-u>CocFzfList extensions<CR>
 nnoremap <silent> <space>l  :<C-u>CocFzfList location<CR>
 nnoremap <silent> <space>o  :<C-u>CocFzfList outline<CR>
 nnoremap <silent> <space>s  :<C-u>CocFzfList symbols<CR>
 nnoremap <silent> <space>S  :<C-u>CocFzfList services<CR>
 nnoremap <silent> <space>p  :<C-u>CocFzfListResume<CR>
+nmap <space>e :CocCommand explorer<CR>
 " " Mappings using CoCList: Show all diagnostics.
 " nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
 " " Manage extensions.
