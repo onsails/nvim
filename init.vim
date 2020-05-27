@@ -43,7 +43,7 @@ Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/fern-renderer-devicons.vim'
 Plug 'lambdalisue/fern-mapping-project-top.vim'
 Plug 'liuchengxu/vista.vim'
-Plug 'neovim/nvim-lsp'
+Plug 'liuchengxu/vim-which-key'
 
 " colorschemes
 Plug 'morhetz/gruvbox'
@@ -94,6 +94,7 @@ source ~/.config/nvim/rust.vim
 source ~/.config/nvim/mq5.vim
 source ~/.config/nvim/fern.vim
 source ~/.config/nvim/vista.vim
+source ~/.config/nvim/which-key.vim
 
 " debug https://www.reddit.com/r/rust/comments/f1ucwh/hey_rustaceans_got_an_easy_question_ask_here_72020/fh910ah/
 " copy-paste https://unix.stackexchange.com/questions/139578/copy-paste-for-vim-is-not-working-when-mouse-set-mouse-a-is-on
