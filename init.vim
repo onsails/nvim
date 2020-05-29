@@ -33,6 +33,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'antoinemadec/coc-fzf'
 Plug 'rust-lang/rust.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 Plug 'kassio/neoterm'
 Plug 'hashivim/vim-terraform'
 Plug 'christoomey/vim-tmux-navigator'
@@ -84,6 +86,7 @@ filetype plugin on
 source ~/.config/nvim/gui.vim
 source ~/.config/nvim/terminal.vim
 source ~/.config/nvim/coc.vim
+source ~/.config/nvim/ts.vim
 source ~/.config/nvim/prettier.vim
 source ~/.config/nvim/airline.vim
 source ~/.config/nvim/fzf.vim
