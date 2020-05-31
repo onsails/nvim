@@ -4,10 +4,9 @@ let g:coc_global_extensions = [
             \ "coc-prettier",
             \ "coc-tsserver",
             \ "coc-pairs",
-            \ "coc-explorer"
+            \ "coc-explorer",
+            \ "coc-yaml",
             \ ]
-
-call coc#add_extension('coc-json', 'coc-tsserver', 'coc-rust-analyzer', 'coc-yaml', 'coc-prettier')
 " coc
 
 " completion navigation
