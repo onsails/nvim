@@ -170,4 +170,3 @@ nmap <space>e :CocCommand explorer<CR>
 
 " highlight code in markdown
 let g:markdown_fenced_languages = ['css', 'js=javascript', 'rust']
-
