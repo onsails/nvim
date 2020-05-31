@@ -48,6 +48,7 @@ Plug 'lambdalisue/fern-mapping-project-top.vim'
 Plug 'liuchengxu/vista.vim'
 Plug 'liuchengxu/vim-which-key'
 Plug 'Yggdroot/indentLine'
+Plug 'jaxbot/semantic-highlight.vim'
 
 " colorschemes
 " Plug 'mhartington/oceanic-next'
@@ -89,6 +90,7 @@ filetype plugin on
 
 :noremap <leader>gf :e <cfile><cr>
 
+source ~/.config/nvim/semantic-highlight.vim
 source ~/.config/nvim/shifting.vim
 source ~/.config/nvim/gui.vim
 source ~/.config/nvim/terminal.vim
