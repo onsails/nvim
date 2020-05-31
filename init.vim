@@ -49,8 +49,12 @@ Plug 'liuchengxu/vista.vim'
 Plug 'liuchengxu/vim-which-key'
 
 " colorschemes
-Plug 'morhetz/gruvbox'
-Plug 'chriskempson/base16-vim'
+" Plug 'mhartington/oceanic-next'
+Plug 'joshdick/onedark.vim'
+" Plug 'NLKNguyen/papercolor-theme'
+" Plug 'srcery-colors/srcery-vim'
+" Plug 'nanotech/jellybeans.vim'
+" Plug 'ayu-theme/ayu-vi'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -58,12 +62,13 @@ call plug#end()
 let mapleader = ","
 
 " color scheme
-syntax on
-set termguicolors
-set background=dark
-syntax on
-colorscheme base16-oceanicnext
-let g:airline = { 'colorscheme': 'base16-oceanicnext' }
+syntax enable
+if has('nvim') || has('termguicolors')
+  set termguicolors
+endif
+let g:onedark_terminal_italics = 1
+colorscheme onedark
+let g:airline_theme = 'onedark'
 
 " reduce default delay of hover highlight
 set updatetime=50
@@ -88,7 +93,6 @@ source ~/.config/nvim/terminal.vim
 source ~/.config/nvim/coc.vim
 source ~/.config/nvim/ts.vim
 source ~/.config/nvim/prettier.vim
-source ~/.config/nvim/airline.vim
 source ~/.config/nvim/fzf.vim
 source ~/.config/nvim/json.vim
 source ~/.config/nvim/yaml.vim
