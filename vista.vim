@@ -16,4 +16,4 @@ nnoremap <leader>s :Vista finder coc<CR>
 
 let g:vista#finders = ['fzf']
 
-nnoremap <leader>v :Vista!!<CR>
+nnoremap <leader>v :Vista<CR>
