@@ -93,6 +93,7 @@ filetype plugin on
 :noremap <leader>gf :e <cfile><cr>
 
 source ~/.config/nvim/semantic-highlight.vim
+source ~/.config/nvim/airline.vim
 source ~/.config/nvim/shifting.vim
 source ~/.config/nvim/gui.vim
 source ~/.config/nvim/terminal.vim
