@@ -71,7 +71,7 @@ endif
 let g:onedark_terminal_italics = 1
 let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
-colorscheme oceanicnext
+colorscheme OceanicNext
 let g:airline_theme = 'oceanicnext'
 
 " reduce default delay of hover highlight
