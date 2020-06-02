@@ -51,7 +51,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'jaxbot/semantic-highlight.vim'
 
 " colorschemes
-" Plug 'mhartington/oceanic-next'
+Plug 'mhartington/oceanic-next'
 Plug 'joshdick/onedark.vim'
 " Plug 'NLKNguyen/papercolor-theme'
 " Plug 'srcery-colors/srcery-vim'
@@ -69,8 +69,10 @@ if has('nvim') || has('termguicolors')
   set termguicolors
 endif
 let g:onedark_terminal_italics = 1
-colorscheme onedark
-let g:airline_theme = 'onedark'
+let g:oceanic_next_terminal_bold = 1
+let g:oceanic_next_terminal_italic = 1
+colorscheme oceanicnext
+let g:airline_theme = 'oceanicnext'
 
 " reduce default delay of hover highlight
 set updatetime=50
