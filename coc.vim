@@ -173,3 +173,4 @@ let g:markdown_fenced_languages = ['css', 'js=javascript', 'rust']
 
 " highlight
 autocmd CursorHold * silent call CocActionAsync('highlight')
+highlight CocHighlightText guibg=#664499  ctermbg=649

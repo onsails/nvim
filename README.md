@@ -2,7 +2,7 @@
 brew install ctags fzf ripgrep
 ```
 
-:CocInstall coc-rust-analyzer
-:CocInstall coc-json
-:CocInstall coc-prettier
-
+For coc-highlight:
+```
+sudo apt-get install python-gtk2
+```
