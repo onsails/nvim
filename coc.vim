@@ -6,6 +6,7 @@ let g:coc_global_extensions = [
             \ "coc-pairs",
             \ "coc-explorer",
             \ "coc-yaml",
+            \ "coc-highlight",
             \ ]
 " coc
 
@@ -169,3 +170,6 @@ nmap <space>e :CocCommand explorer<CR>
 
 " highlight code in markdown
 let g:markdown_fenced_languages = ['css', 'js=javascript', 'rust']
+
+" highlight
+autocmd CursorHold * silent call CocActionAsync('highlight')
