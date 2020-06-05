@@ -23,6 +23,7 @@ inoremap <C-d> <Esc>lxi
 call plug#begin('~/.config/nvim/plugged')
 
 " Declare the list of plugins.
+Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
