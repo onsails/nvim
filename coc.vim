@@ -171,6 +171,9 @@ nmap <space>e :CocCommand explorer<CR>
 " highlight code in markdown
 let g:markdown_fenced_languages = ['css', 'js=javascript', 'rust']
 
-" highlight
+" highligh
 autocmd CursorHold * silent call CocActionAsync('highlight')
-highlight CocHighlightText guibg=#664499  ctermbg=649
+highlight CocHighlightText guibg=#664499 guifg=#b9bcbe ctermbg=649 ctermfg=LightGray
+
+nnoremap <silent> <leader>cp :call CocAction('pickColor')<CR>
+nnoremap <silent> <leader>cP :call CocAction('colorPresentation')<CR>
