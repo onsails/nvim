@@ -23,7 +23,7 @@
   "coc.preferences.codeLens.enable": true,
   "coc.preferences.diagnostic.virtualText": true,
   "coc.preferences.suggest.enablePreview": true,
-  "rust-analyzer.updates.channel": "nightly",
+  "rust-analyzer.updates.channel": "stable",
   "yaml.editor.tabSize": 2,
   "explorer.icon.enableNerdfont": true
 }
