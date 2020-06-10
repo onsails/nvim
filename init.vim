@@ -48,7 +48,7 @@ Plug 'lambdalisue/fern-renderer-devicons.vim'
 Plug 'lambdalisue/fern-mapping-project-top.vim'
 Plug 'liuchengxu/vista.vim'
 Plug 'liuchengxu/vim-which-key'
-Plug 'Yggdroot/indentLine'
+Plug 'thaerkh/vim-indentguides'
 Plug 'jaxbot/semantic-highlight.vim'
 
 " colorschemes
@@ -114,4 +114,3 @@ source ~/.config/nvim/which-key.vim
 
 " debug https://www.reddit.com/r/rust/comments/f1ucwh/hey_rustaceans_got_an_easy_question_ask_here_72020/fh910ah/
 " copy-paste https://unix.stackexchange.com/questions/139578/copy-paste-for-vim-is-not-working-when-mouse-set-mouse-a-is-on
-
