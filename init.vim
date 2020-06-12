@@ -50,6 +50,7 @@ Plug 'liuchengxu/vista.vim'
 Plug 'liuchengxu/vim-which-key'
 Plug 'thaerkh/vim-indentguides'
 Plug 'jaxbot/semantic-highlight.vim'
+Plug 'sheerun/vim-polyglot'
 
 " colorschemes
 Plug 'mhartington/oceanic-next'
