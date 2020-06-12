@@ -48,9 +48,10 @@ Plug 'lambdalisue/fern-renderer-devicons.vim'
 Plug 'lambdalisue/fern-mapping-project-top.vim'
 Plug 'liuchengxu/vista.vim'
 Plug 'liuchengxu/vim-which-key'
-Plug 'thaerkh/vim-indentguides'
+Plug 'Yggdroot/indentLine'
 Plug 'jaxbot/semantic-highlight.vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-markdown'
 
 " colorschemes
 Plug 'mhartington/oceanic-next'
@@ -103,11 +104,15 @@ source ~/.config/nvim/coc.vim
 source ~/.config/nvim/ts.vim
 source ~/.config/nvim/prettier.vim
 source ~/.config/nvim/fzf.vim
+source ~/.config/nvim/nerdcommenter.vim
+
+source ~/.config/nvim/polyglot.vim
 source ~/.config/nvim/json.vim
 source ~/.config/nvim/yaml.vim
 source ~/.config/nvim/terraform.vim
-source ~/.config/nvim/nerdcommenter.vim
 source ~/.config/nvim/rust.vim
+source ~/.config/nvim/markdown.vim
+
 source ~/.config/nvim/mq5.vim
 source ~/.config/nvim/fern.vim
 source ~/.config/nvim/vista.vim

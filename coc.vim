@@ -7,6 +7,7 @@ let g:coc_global_extensions = [
             \ "coc-explorer",
             \ "coc-yaml",
             \ "coc-highlight",
+            \ "coc-markdownlint"
             \ ]
 " coc
 
@@ -167,9 +168,6 @@ nmap <space>e :CocCommand explorer<CR>
 " nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " " Resume latest coc list.
 " nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
-
-" highlight code in markdown
-let g:markdown_fenced_languages = ['css', 'js=javascript', 'rust']
 
 " highligh
 autocmd CursorHold * silent call CocActionAsync('highlight')
