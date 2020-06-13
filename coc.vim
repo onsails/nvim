@@ -151,7 +151,7 @@ nnoremap <silent> <space>o  :<C-u>CocFzfList outline<CR>
 nnoremap <silent> <space>s  :<C-u>CocFzfList symbols<CR>
 nnoremap <silent> <space>S  :<C-u>CocFzfList services<CR>
 nnoremap <silent> <space>p  :<C-u>CocFzfListResume<CR>
-nmap <space>e :CocCommand explorer<CR>
+nnoremap <silent> <space>e :CocCommand explorer<CR>
 " " Mappings using CoCList: Show all diagnostics.
 " nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
 " " Manage extensions.
