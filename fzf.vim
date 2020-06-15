@@ -34,3 +34,22 @@ command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
 " [Buffers] Jump to the existing window if possible
 let g:fzf_buffers_jump = 1
 
+" Registers
+function! s:get_registers() abort
+  redir => l:regs
+  silent registers
+  redir END
+
+  return split(l:regs, '\n')[1:]
+endfunction
+
+function! s:registers(...) abort
+  let l:opts = {
+        \ 'source': s:get_registers(),
+        \ 'sink': {x -> feedkeys(matchstr(x, '\v^\S+\ze.*') . (a:1 ? 'P' : 'p'), 'x')},
+        \ 'options': '--prompt="Reg> "'
+        \ }
+  call fzf#run(fzf#wrap(l:opts))
+endfunction
+
+command! -bang Reg call s:registers('<bang>' ==# '!')
