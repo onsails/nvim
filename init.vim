@@ -53,6 +53,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'jaxbot/semantic-highlight.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-sleuth'
 
 " colorschemes
 Plug 'mhartington/oceanic-next'
@@ -82,15 +83,6 @@ let g:airline_theme = 'oceanicnext'
 set updatetime=50
 
 set number
-
-" https://vi.stackexchange.com/questions/4141/how-to-indent-as-spaces-instead-of-tab
-" https://stackoverflow.com/questions/17916154/vim-tab-spacing-after-enter-new-line
-" set tabstop=4
-" set softtabstop=4
-" set shiftwidth=4
-set expandtab
-set autoindent
-set smartindent
 
 filetype plugin on
 
